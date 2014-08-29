@@ -1,0 +1,19 @@
+system os2v2 dll initinstance terminstance
+name rexxmath.dll
+file rexxmath.obj
+library rexx
+option caseexact
+option map=rexxmath.map
+option modname=REXXMATH
+option description 'REXXMATH Functions - (c) Zhitao Zeng Footprint Software 1994'
+option protmode
+option manyautodata
+segment class 'code' loadoncall
+segment class 'data' loadoncall nonshared readwrite
+
+export MathLoadFuncs      .1
+export MathDropFuncs      .2
+export MathFunc           .3
+export MATHLOADFUNCS=MathLoadFuncs
+export MATHDROPFUNCS=MathDropFuncs
+export MATHFUNC=MathFunc

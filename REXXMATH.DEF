@@ -1,0 +1,8 @@
+LIBRARY REXXMATH INITINSTANCE LONGNAMES
+PROTMODE
+DESCRIPTION 'REXXMATH Functions - (c) Zhitao Zeng Footprint Software 1994'
+DATA MULTIPLE NONSHARED
+EXPORTS
+	  MATHLOADFUNCS  =  MathLoadFuncs	 @1
+	  MATHDROPFUNCS  =  MathDropFuncs	 @2
+	  MATHFUNC       =  MathFunc	       @3

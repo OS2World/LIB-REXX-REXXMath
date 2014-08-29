@@ -1,0 +1,13 @@
+# NMAKE-compatible MAKE file for the REXX sample program REXXMATH.DLL.
+# This uses the WATCOM C/C++ 32 v9.5 compiler
+
+CC = wcc386 -bd -zq -j -zp4 -5s -os -fp5 -s -D__MIG_LIB__ -D_Optlink 
+LINK = wlink
+
+rexxmath.dll:     rexxmath.obj  rexxmath.def
+         $(LINK) @rexxmath
+
+rexxmath.obj:     rexxmath.c
+         $(CC) rexxmath.c
+
+

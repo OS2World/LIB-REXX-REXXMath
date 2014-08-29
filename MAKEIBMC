@@ -1,0 +1,10 @@
+# NMAKE-compatible MAKE file for the REXX sample program REXXMATH.DLL.
+# This uses the IBM C Set/2 compiler and LINK386.
+
+rexxmath.dll:     rexxmath.obj  rexxmath.def
+         LINK386 /EXEPACK rexxmath.obj,rexxmath.dll,,REXX,rexxmath.def;
+
+rexxmath.obj:     rexxmath.c
+         icc -c -Ge- -Ss rexxmath.c
+
+

@@ -1,0 +1,56 @@
+REXXMATH v1.0 03/22/94 by Zhitao Zeng Footprint Software Inc.
+
+This program is released to the public domain, feel free to use
+it for any purposes.
+
+If you have any suggestions, please email to Zhitao Zeng at:   
+   CIS: 72000,2440                                                
+   Internet: zzeng@footprint.com                                  
+
+The REXXMATH.DLL is the rexx interface to the mathematics functions
+found in C runtime libraries.  Refer to any C runtime library
+reference manual for details on how to use those functions.
+
+ANSI Math Functions
+
+acos( x )
+asin( x )
+atan( x )
+atan2( x, y )
+ceil( x )
+cos( x )
+cosh( x )
+exp( x )
+fabs( x )
+floor( x )
+fmod( x, y )
+frexp( x )   // two values are returned
+ldexp( x, i )
+log( x )
+log10( x )
+modf( x )    // two values are returned
+pow( x, y )
+sin( x )
+sinh( x )
+sqrt( x )
+tan( x )
+tanh( x )
+
+
+Non-ANSI Math Functions
+
+hypot( x, y )
+j0( x )
+j1( x )
+jn( i, x )
+y0( x )
+y1( x )
+yn( i, x )
+pi()
+
+Available when REXXMATH is compiled with IBM C Set/2
+erf( x )
+erfc( x )
+gamma( x )
+
+
